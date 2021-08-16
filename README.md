@@ -1,10 +1,19 @@
 # MongoDB Kafka connector customization
 
-Example of writing a custom write strategy
+Example of writing a custom write strategy.
 
+To build:
+```bash
 ./gradlew clean build
+```
 
-Then copy the `mongo-kafka-customization/build/libs/UpsertAsPartOfDocumentStrategy.jar`
+Then copy the `./build/libs/UpdateArrayFieldModelStrategy.jar`
+
+Usage:
+
+```properties
+writemodel.strategy=custom.writestrategy.UpdateArrayFieldModelStrategy
+```
 
 
 ## Customization
